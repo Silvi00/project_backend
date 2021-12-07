@@ -20,14 +20,14 @@ public class HospitalApplication {
 		SpringApplication.run(HospitalApplication.class, args);
 	}
 
-	@Bean
-	CommandLineRunner run(UserRepo userRepo) {
-		return args -> {
-			userRepo.save(new User(null,"Silvana","Ghemes","silvi@gmail.com","parola", Department.NEUROLOGIE));
-			userRepo.save(new User(null,"Eliss","Indricau","eliss@gmail.com","parola2", Department.CARDIOLOGIE));
-
-		};
-	}
+//	@Bean
+//	CommandLineRunner run(UserRepo userRepo) {
+//		return args -> {
+//			userRepo.save(new User(null,"Silvana","Ghemes","silvi@gmail.com","parola", Department.NEUROLOGIE));
+//			userRepo.save(new User(null,"Eliss","Indricau","eliss@gmail.com","parola2", Department.CARDIOLOGIE));
+//
+//		};
+//	}
 
 	@Bean
 	public CorsFilter corsFilter() {
