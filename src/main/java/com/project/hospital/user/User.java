@@ -12,8 +12,8 @@ import javax.validation.constraints.NotEmpty;
 @Entity
 @Data
 //@NoArgsConstructor
-//@AllArgsConstructor
-@Table(name = "hospital")
+@AllArgsConstructor
+//@Table(name = "hospital")
 public class User {
 
     @Id
@@ -43,10 +43,10 @@ public class User {
         this.dept = dept;
     }
 
-//    public User(String email, String password, boolean b) {
-//        this.email = email;
-//        this.password = password;
-//    }
+    public User(String email, String password) {
+        this.email = email;
+        this.password = password;
+    }
 
     public Long getId() {
         return id;

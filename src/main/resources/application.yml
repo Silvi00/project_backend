@@ -1,7 +1,7 @@
 
 spring:
   datasource:
-    password: admin
+    password: root
     url: jdbc:mysql://127.0.0.1:3307/hospital  # ???
     username: root
   jpa:
@@ -12,8 +12,4 @@ spring:
         dialect: org.hibernate.dialect.MySQL8Dialect
         format-sql: true
     show-sql: true
-server:
-  port: 8081
 
-#  main:
-#    web-application-type: none
