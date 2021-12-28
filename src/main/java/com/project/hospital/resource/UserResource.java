@@ -52,6 +52,7 @@ public class UserResource {
     JwtUtils jwtUtils;
 
     private final UserServiceImpl userService;
+
     @Autowired
     UserRepo userRepo;
 

@@ -12,8 +12,11 @@ import javax.validation.constraints.NotEmpty;
 @Entity
 @Data
 //@NoArgsConstructor
-@AllArgsConstructor
-//@Table(name = "hospital")
+//@AllArgsConstructor
+@Table(name = "hospital",
+        uniqueConstraints = {
+                @UniqueConstraint(columnNames = "email")
+        })
 public class User {
 
     @Id

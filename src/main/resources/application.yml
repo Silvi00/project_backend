@@ -13,3 +13,6 @@ spring:
         format-sql: true
     show-sql: true
 
+jwt:
+  secret: bezKoderSecretKey
+  expiration: 86400000
