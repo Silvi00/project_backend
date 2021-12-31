@@ -12,11 +12,8 @@ import javax.validation.constraints.NotEmpty;
 @Entity
 @Data
 //@NoArgsConstructor
-//@AllArgsConstructor
-@Table(name = "hospital",
-        uniqueConstraints = {
-                @UniqueConstraint(columnNames = "email")
-        })
+@AllArgsConstructor
+@Table(name = "user")
 public class User {
 
     @Id
@@ -38,7 +35,6 @@ public class User {
     }
 
     public User(String firstName, String lastName, String email, String password, Department dept) {
-//        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -46,10 +42,10 @@ public class User {
         this.dept = dept;
     }
 
-    public User(String email, String password) {
-        this.email = email;
-        this.password = password;
-    }
+//    public User(String email, String password, boolean b) {
+//        this.email = email;
+//        this.password = password;
+//    }
 
     public Long getId() {
         return id;
