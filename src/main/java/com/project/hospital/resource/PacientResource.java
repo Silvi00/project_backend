@@ -33,6 +33,7 @@ public class PacientResource {
     @GetMapping("/list")
     public ResponseEntity<Response> getPacienti() throws InterruptedException{
 //        TimeUnit.SECONDS.sleep(3); // timpul in care sa apara datele pe ecran
+        System.out.println("sunt in save user");
         return ResponseEntity.ok(
                 Response.builder()
                         .timeStamp(now())
