@@ -1,6 +1,8 @@
 package com.project.hospital;
 
+import com.project.hospital.consultatie.Consultatie;
 import com.project.hospital.enums.Department;
+import com.project.hospital.repo.ConsultatieRepo;
 import com.project.hospital.repo.UserRepo;
 import com.project.hospital.user.User;
 import org.springframework.boot.CommandLineRunner;
@@ -12,6 +14,7 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 
 import java.util.Arrays;
+import java.util.Date;
 
 @SpringBootApplication
 public class HospitalApplication {
@@ -26,6 +29,13 @@ public class HospitalApplication {
 //			userRepo.save(new User(null,"Silvana","Ghemes","silvi@gmail.com","parola", Department.NEUROLOGIE));
 //			userRepo.save(new User(null,"Eliss","Indricau","eliss@gmail.com","parola2", Department.CARDIOLOGIE));
 //
+//		};
+//	}
+
+//		@Bean
+//	CommandLineRunner run(ConsultatieRepo consultatieRepo) {
+//		return args -> {
+//			consultatieRepo.save(new Consultatie("1234567890123","Ghemes","Silvana",new Date(),"simptome","diagnostic","prescriptie"));
 //		};
 //	}
 
